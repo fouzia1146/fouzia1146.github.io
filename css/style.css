@@ -1,120 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Poppins&display=swap');
 body{
-    display: flex;
-    justify-content: center;
-    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    box-sizing: hidden;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
 }
-.first{
-    background-color:  rgb(237, 227, 213);
-    height: 50vh;
-    width: 18vw;
-    margin-top: 20vh;
 
+.navbar{
+    width: 100vw;
+    text-transform: uppercase;
+    font: size 14px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    background: rgba(0, 0, 0, 0.6) !important;
+    padding: 10px;
+    position: sticky;
+    top: 0;
 }
-.second{
-    background-color: rgb(237, 227, 213);
-    margin-top: 20vh;
-    height: 80vh;
-    width: 50vw;
-    margin-left: 3rem;
-}
-.first-one{
-    display: flex;
-    height: 60%;
-    flex-direction: column;
-    justify-content:flex-end;
-    align-items: center;
-    background-color:rgb(233, 214, 193);
-    position: relative;
-}
-.first-one img{
-    position: absolute;
-    top: -30%;
-    height: 9rem;
-    width: 9rem;
-    border-radius: 13% 13% 13% 13%;
-}
-.name{
-    font-size: 1.7rem;
-}
-.icons i{
-    margin-right: 1rem;
-    padding-bottom: 2rem;
-}
-.first-two{
-    margin-top: 2rem;
-    height: 40%;
-    width: 100%;
-    background-color: rgb(237, 227, 213);
-}
-.second-one{
-    display: flex;
-    height: 30%;
-    flex-direction: column;
-    position: relative;
-    background-color:rgb(233, 214, 193);
-}
-.second-two{
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 3rem;
-    background-color: rgb(237, 227, 213);
-}
-.second-one-1{
-    margin-left: 3rem;
-}
-.second-box{
-    background-color: rgb(233, 214, 193);
-    height: 15vh;
-    width: 20vw;
-    margin-left: 3rem; 
-    border-radius: 10% 10% 10% 10%; 
-}
-.second-boxo{
-    margin-left: 1rem;
-}
-.secn-box{
-    display: flex;
-    justify-content: center;
-}
-.secon-box{
-    background-color: rgb(233, 214, 193);
-    margin-top: 4vh;
-    height: 15vh;
-    width: 20vw;
-    margin-left: 3rem;
-    border-radius: 10% 10% 10% 10%;
-}
-.sec-box{
-    display: flex;
-    justify-content: center;
-}
-.date{
-    display: flex;
-    justify-content:space-between;
-    width :80%;
+
+.navbar ul{
+    width: 40%;
     margin: auto;
-    padding-bottom: 2rem;
-}
-table{
-    width: 70%;
-    margin: auto;;
 }
 
-@media screen and (max-width: 1200px) {
-    .second-one{
-        height: auto;
-    }
-    .date{
-        width: 95%;
-    }
-    .second-box{
-        height: auto;
-    }
-    .secon-box{
-        height: auto;
-    }
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+    padding-left: 20px;
 }
 
-@media screen and (max-width: 1200px){
-    
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #1ebba3;
+}
+
+.heading-content{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.heading-content h5{
+    font-size: 4em;
+    font-weight: 300;
+    color: #fff;
+    font-family: monospace;
+}
+
+.heading-content h1{
+    font-size: 5em;
+    font-weight: bolder;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading-content p{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #fff;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+
+#about .btn{
+    border: 2px solid transparent;
+    width: 40px;
+    padding: 15px 22px;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#about .btn a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#about .btn:hover{
+    border: 2px solid #1ebba3;
+    cursor: pointer;
+}
+
+#service .button{
+    border: 2px solid transparent;
+    width: 40px;
+    padding: 15px 22px;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#service .button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#service .btn:hover{
+    border: 2px solid #1ebba3;
+    cursor: pointer;
 }
